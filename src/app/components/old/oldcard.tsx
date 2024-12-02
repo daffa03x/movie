@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Result } from "../data/types";
+import { Result } from "../../data/types";
 interface CardProps {
   movies: Result[];
 }
-const card: React.FC<CardProps> = ({ movies }) => {
+const oldcard: React.FC<CardProps> = ({ movies }) => {
   return (
     <div className="container mx-auto py-8 px-4">
       <h1 className="text-3xl font-bold mb-6 text-center">Popular Movies</h1>
@@ -23,4 +23,4 @@ const card: React.FC<CardProps> = ({ movies }) => {
   );
 };
 
-export default card;
+export default oldcard;
